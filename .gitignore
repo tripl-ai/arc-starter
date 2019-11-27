@@ -1,0 +1,13 @@
+.bash_history
+.bloop
+.cache
+.config
+.ipynb_checkpoints
+.ipython
+.jars
+.jupyter
+.local
+.metals
+.vscode
+examples/tutorial/**/output
+spark-warehouse

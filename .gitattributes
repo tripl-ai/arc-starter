@@ -1,0 +1,4 @@
+.img/** binary
+tutorial/data/** binary
+tutorial/northwind/**parquet** binary
+tutorial/job/**/trips_enriched.model/** binary

@@ -2,5 +2,6 @@
 
 | Directory   | Description                                                                                                                                                                                              |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| fuzzy_match | This example demonstrates the use of the [SimilarityJoinTransform](https://arc.tripl.ai/transform/#similarityjointransform) stage to perform [Approximate string matching](https://en.wikipedia.org/wiki/Approximate_string_matching) (a.k.a. Fuzzy Matching) to compare two datasets for similar records.|
 | movie_graph | This example demonstrates the use of SQL and Cypher to generate and query a graph structure. This could be used to add friends-of-friends type features to a fraud detection machine learning algorithm. |
 | tutorial    | This example is used in the [Tutorial](https://arc.tripl.ai/tutorial) and contains subversions for the various stages of the [Tutorial](https://arc.tripl.ai/tutorial).                                                                                                    |

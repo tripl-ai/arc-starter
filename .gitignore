@@ -11,3 +11,4 @@
 .vscode
 examples/tutorial/**/output
 spark-warehouse
+**.DS_Store

@@ -1,5 +1,5 @@
 #!/bin/bash
-ARC_JUPYTER_VERSION=1.9.3
+ARC_JUPYTER_VERSION=1.10.0
 HADOOP_VERSION=2.9.2
 IMAGE_VERSION=1.0.0
 JAVA_OPTS=-Xmx4g
@@ -12,15 +12,13 @@ cat <<"EOF"
 EOF
 cat <<EOF
 
-version $ARC_JUPYTER_VERSION
-
 EOF
 PS3='Please choose version: '
-options=("Scala 2.11 (includes arc-cassandra-pipeline-plugin, arc-deltaperiod-config-plugin, arc-deltalake-pipeline-plugin, arc-elasticsearch-pipeline-plugin, arc-kafka-pipeline-plugin, arc-mongodb-pipeline-plugin, arc-sas-pipeline-plugin)" "Scala 2.12 (includes arc-deltalake-pipeline-plugin, arc-deltaperiod-config-plugin, arc-graph-pipeline-plugin, arc-kafka-pipeline-plugin, arc-mongodb-pipeline-plugin, arc-sas-pipeline-plugin)" "Quit")
+options=("Scala 2.11 (includes arc-cassandra-pipeline-plugin, arc-dataquality-udf-plugin, arc-deltalake-pipeline-plugin, arc-deltaperiod-config-plugin, arc-elasticsearch-pipeline-plugin, arc-kafka-pipeline-plugin, arc-mongodb-pipeline-plugin, arc-sas-pipeline-plugin)" "Scala 2.12 (includes arc-cassandra-pipeline-plugin, arc-dataquality-udf-plugin, arc-deltalake-pipeline-plugin, arc-deltaperiod-config-plugin, arc-kafka-pipeline-plugin, arc-mongodb-pipeline-plugin, arc-sas-pipeline-plugin)" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
-        "Scala 2.11 (includes arc-cassandra-pipeline-plugin, arc-deltaperiod-config-plugin, arc-deltalake-pipeline-plugin, arc-elasticsearch-pipeline-plugin, arc-kafka-pipeline-plugin, arc-mongodb-pipeline-plugin, arc-sas-pipeline-plugin)")
+        "Scala 2.11 (includes arc-cassandra-pipeline-plugin, arc-dataquality-udf-plugin, arc-deltalake-pipeline-plugin, arc-deltaperiod-config-plugin, arc-elasticsearch-pipeline-plugin, arc-kafka-pipeline-plugin, arc-mongodb-pipeline-plugin, arc-sas-pipeline-plugin)")
             docker run \
                 --name arc-jupyter \
                 --rm \
@@ -34,7 +32,7 @@ do
                 --NotebookApp.token=''
             break
             ;;
-        "Scala 2.12 (includes arc-deltalake-pipeline-plugin, arc-deltaperiod-config-plugin, arc-graph-pipeline-plugin, arc-kafka-pipeline-plugin, arc-mongodb-pipeline-plugin, arc-sas-pipeline-plugin)")
+        "Scala 2.12 (includes arc-cassandra-pipeline-plugin, arc-dataquality-udf-plugin, arc-deltalake-pipeline-plugin, arc-deltaperiod-config-plugin, arc-kafka-pipeline-plugin, arc-mongodb-pipeline-plugin, arc-sas-pipeline-plugin)")
             docker run \
                 --name arc-jupyter \
                 --rm \

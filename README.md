@@ -35,6 +35,7 @@ to
 | %printschema   | Prints the Spark schema for the input view as text.                                        | ✔          | ✔          |         |          |            |
 | %schema        | Prints the Spark schema for the input view.                                                | ✔          | ✔          |         |          |            |
 | %sql           | Execute a SQL query and return resultset.                                                  | ✔          | ✔          | ✔       | ✔        | ✔          |
+| %sqlvalidate   | Execute a SQL query as a SQLValidate stage                                                 | ✔          | ✔          | ✔       | ✔        | ✔          |
 | %summary       | Returns the summary statistics of an input view as resultset.                              | ✔          | ✔          | ✔       | ✔        | ✔          |
 | %version       | Prints the version information of Arc Jupyter.                                             | ✔          | ✔          |         |          |            |
 
@@ -53,6 +54,29 @@ This example shows how to use the `numRows`, `truncate`, `outputView` and `persi
 SELECT * 
 FROM green_tripdata0_raw
 WHERE fare_amount < 10
+```
+
+### Magics
+
+These magics can be used to create 'inline SQL' statements that are executed as part of an Arc job.
+
+#### SQLTransform
+
+```sql
+%sql name="sqltransform" description="description" environments=production,test outputView=example persist=true sqlParams=inputView=customer,inputField=id
+SELECT
+    ${inputField}
+FROM ${inputView}
+```
+
+#### SQLValidate
+
+```
+%sqlvaildate name="name" description="description" environments=production,test sqlParams=inputView=customer,inputField=id
+SELECT
+    ${inputField} = 1 AS valid,
+    "" AS message
+FROM ${inputView}
 ```
 
 ## Exporting

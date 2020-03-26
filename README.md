@@ -71,7 +71,7 @@ FROM ${inputView}
 
 #### SQLValidate
 
-```
+```sql
 %sqlvaildate name="name" description="description" environments=production,test sqlParams=inputView=customer,inputField=id
 SELECT
     ${inputField} = 1 AS valid,

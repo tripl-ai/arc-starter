@@ -85,6 +85,10 @@ In addition to executing the `.ipynb` file directly an Arc job export option has
 
 ![Download as](./.img/download_as.png)
 
+## Saving Data with Notebook
+
+By default each time an Arc notebook is saved the data will be removed so it cannot be inadvertently checked in to source control. This can be disabled by passing an environment variable to the docker image like: `-e JUPYTER_SAVE_OUTPUT=true`.
+
 ## Issues
 
 **Important:**

@@ -40,7 +40,7 @@
                     <EndToEndId>E2E-ID-1</EndToEndId>
                 </PmtId>
                 <Amt>
-                    <InstdAmt Ccy="AUD">13.50</InstdAmt>
+                    <InstdAmt Ccy="AUD">14.50</InstdAmt>
                 </Amt>
                 <CdtrAgt>
                     <FinInstnId>
@@ -64,7 +64,7 @@
                     <EndToEndId>E2E-ID-2</EndToEndId>
                 </PmtId>
                 <Amt>
-                    <InstdAmt Ccy="AUD">15.50</InstdAmt>
+                    <InstdAmt Ccy="AUD">16.50</InstdAmt>
                 </Amt>
                 <CdtrAgt>
                     <FinInstnId>

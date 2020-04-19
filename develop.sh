@@ -1,7 +1,7 @@
 #!/bin/bash
-ARC_JUPYTER_VERSION=2.1.1
+ARC_JUPYTER_VERSION=2.2.0
 HADOOP_VERSION=2.9.2
-IMAGE_VERSION=1.1.0
+IMAGE_VERSION=1.0.0
 JAVA_OPTS=-Xmx4g
 cat <<"EOF"
 
@@ -21,11 +21,14 @@ EOF
 docker run \
 --name arc-jupyter \
 --rm \
--v $(pwd)/examples:/home/jovyan/examples:Z \
--e JAVA_OPTS=${JAVA_OPTS} \
--p 4040:4040 \
--p 8888:8888 \
+--volume $(pwd)/examples:/home/jovyan/examples:Z \
+--env ${JAVA_OPTS} \
+--entrypoint='' \
+--publish 4040:4040 \
+--publish 8888:8888 \
 triplai/arc-jupyter:arc-jupyter_${ARC_JUPYTER_VERSION}_scala_2.12_hadoop_${HADOOP_VERSION}_${IMAGE_VERSION} \
-start-notebook.sh \
+jupyter notebook \
+--ip=0.0.0.0 \
+--no-browser \
 --NotebookApp.password='' \
 --NotebookApp.token=''

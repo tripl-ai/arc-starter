@@ -23,6 +23,7 @@ docker run \
 --rm \
 --volume $(pwd)/examples:/home/jovyan/examples:Z \
 --env ${JAVA_OPTS} \
+--env "conf_spark_sql_extensions=io.delta.sql.DeltaSparkSessionExtension" \
 --entrypoint='' \
 --publish 4040:4040 \
 --publish 8888:8888 \

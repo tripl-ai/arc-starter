@@ -194,7 +194,6 @@
     }
   },
   {
-    "id": "e71597c1-67ae-4176-9ae3-ae4dbe0886b9",
     "name": "fare_amount",
     "description": "The time-and-distance fare calculated by the meter.",
     "trim": true,
@@ -211,7 +210,6 @@
     }
   },
   {
-    "id": "77d91cb6-22e4-4dba-883a-eee0c8690f31",
     "name": "extra",
     "description": "Miscellaneous extras and surcharges. Currently, this only includes the $0.50 and $1 rush hour and overnight charges.",
     "trim": true,

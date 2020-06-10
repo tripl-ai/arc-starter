@@ -95,7 +95,7 @@
     "precision": 18,
     "scale": 14,
     "metadata": {
-      "pii": false,
+      "pii": true,
       "mask": {
         "treatments": [
           "mask_decimal(1.0, true, ${value})"
@@ -115,7 +115,7 @@
     "precision": 18,
     "scale": 14,
     "metadata": {
-      "pii": false,
+      "pii": true,
       "mask": {
         "treatments": [
           "mask_decimal(1.0, true, ${value})"
@@ -135,7 +135,7 @@
     "precision": 18,
     "scale": 14,
     "metadata": {
-      "pii": false,
+      "pii": true,
       "mask": {
         "treatments": [
           "mask_decimal(1.0, true, ${value})"
@@ -155,7 +155,7 @@
     "precision": 18,
     "scale": 14,
     "metadata": {
-      "pii": false,
+      "pii": true,
       "mask": {
         "treatments": [
           "mask_decimal(1.0, true, ${value})"

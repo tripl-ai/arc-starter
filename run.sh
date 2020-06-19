@@ -2,8 +2,6 @@ docker run \
 --rm \
 --volume $(pwd)/examples:/home/jovyan/examples:Z \
 --env "ETL_CONF_ENV=production" \
---env "ETL_CONF_DATA_URL=s3a://nyc-tlc/trip*data" \
---env "ETL_CONF_JOB_URL=https://raw.githubusercontent.com/tripl-ai/arc-starter/master/examples/kubernetes" \
 --entrypoint='' \
 --publish 4041:4040 \
 triplai/arc:arc_3.0.0_spark_3.0.0_scala_2.12_hadoop_3.2.0_1.0.0 \
@@ -14,4 +12,4 @@ bin/spark-submit \
 --conf spark.authenticate.secret=$(openssl rand -hex 64) \
 --class ai.tripl.arc.ARC \
 /opt/spark/jars/arc.jar \
---etl.config.uri=file:///home/jovyan/examples/kubernetes/nyctaxi.ipynb
+--etl.config.uri=file:///home/jovyan/examples/tutorial/0/nyctaxi.ipynb

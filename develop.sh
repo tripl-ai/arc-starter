@@ -13,7 +13,7 @@ cat <<"EOF"
                                /_/    /____/
 EOF
 cat <<EOF
-version: ${ARC_JUPYTER_VERSION}
+triplai/arc-jupyter:arc-jupyter_${ARC_JUPYTER_VERSION}_scala_2.12_hadoop_${HADOOP_VERSION}_${IMAGE_VERSION}
 
 EOF
 

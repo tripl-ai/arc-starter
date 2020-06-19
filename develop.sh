@@ -1,6 +1,6 @@
 #!/bin/bash
-ARC_JUPYTER_VERSION=2.4.1
-HADOOP_VERSION=2.9.2
+ARC_JUPYTER_VERSION=3.0.1
+HADOOP_VERSION=3.2.0
 IMAGE_VERSION=1.0.0
 JAVA_OPTS=-Xmx4G
 cat <<"EOF"
@@ -14,7 +14,6 @@ cat <<"EOF"
 EOF
 cat <<EOF
 version: ${ARC_JUPYTER_VERSION}
-includes arc-cassandra-pipeline-plugin, arc-dataquality-udf-plugin, arc-deltalake-pipeline-plugin, arc-deltaperiod-config-plugin, arc-kafka-pipeline-plugin, arc-mongodb-pipeline-plugin, arc-sas-pipeline-plugin
 
 EOF
 
@@ -23,7 +22,6 @@ docker run \
 --rm \
 --volume $(pwd)/examples:/home/jovyan/examples:Z \
 --env "JAVA_OPTS=${JAVA_OPTS}" \
---env "conf_spark_sql_extensions=io.delta.sql.DeltaSparkSessionExtension" \
 --entrypoint="" \
 --publish 4040:4040 \
 --publish 8888:8888 \

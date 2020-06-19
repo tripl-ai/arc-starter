@@ -2,17 +2,16 @@ docker run \
 --rm \
 --volume $(pwd)/examples:/home/jovyan/examples:Z \
 --env "ETL_CONF_ENV=production" \
+--env "ETL_CONF_DATA_URL=s3a://nyc-tlc/trip*data" \
+--env "ETL_CONF_JOB_URL=https://raw.githubusercontent.com/tripl-ai/arc-starter/master/examples/kubernetes" \
 --entrypoint='' \
---publish 4040:4040 \
-triplai/arc:arc_2.12.4_spark_2.4.5_scala_2.12_hadoop_2.9.2_1.0.0 \
+--publish 4041:4040 \
+triplai/arc:arc_3.0.0_spark_3.0.0_scala_2.12_hadoop_3.2.0_1.0.0 \
 bin/spark-submit \
 --master local[*] \
 --driver-memory 4g \
---driver-java-options "-XX:+UseG1GC -XX:-UseGCOverheadLimit -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap" \
---conf spark.authenticate=true \
+--driver-java-options "-XX:+UseG1GC" \
 --conf spark.authenticate.secret=$(openssl rand -hex 64) \
---conf spark.io.encryption.enabled=true \
---conf spark.network.crypto.enabled=true \
 --class ai.tripl.arc.ARC \
 /opt/spark/jars/arc.jar \
---etl.config.uri=file:///home/jovyan/examples/tutorial/0/nyctaxi.ipynb
+--etl.config.uri=file:///home/jovyan/examples/kubernetes/nyctaxi.ipynb

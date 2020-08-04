@@ -4,7 +4,7 @@ docker run \
 --env "ETL_CONF_ENV=production" \
 --entrypoint='' \
 --publish 4041:4040 \
-triplai/arc:arc_3.1.0_spark_3.0.0_scala_2.12_hadoop_3.2.0_1.0.0 \
+triplai/arc:latest \
 bin/spark-submit \
 --master local[*] \
 --driver-memory 4g \

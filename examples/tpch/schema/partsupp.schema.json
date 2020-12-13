@@ -1,0 +1,49 @@
+[{
+  "name" : "ps_partkey",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "integer",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "ps_suppkey",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "integer",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "ps_availqty",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "integer",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "ps_supplycost",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "double",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "ps_comment",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "null",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+}]

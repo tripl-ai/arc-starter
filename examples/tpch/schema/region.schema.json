@@ -1,0 +1,33 @@
+[{
+  "name" : "r_regionkey",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "integer",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "r_name",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "r_comment",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "null",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+}]

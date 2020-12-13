@@ -1,0 +1,82 @@
+[{
+  "name" : "o_orderkey",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "integer",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "o_custkey",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "integer",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "o_orderstatus",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "o_totalprice",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "double",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "o_orderdate",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "date",
+  "formatters" : ["uuuu-MM-dd"],
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "o_orderpriority",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "o_clerk",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "o_shippriority",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "integer",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "o_comment",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "null",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+}]

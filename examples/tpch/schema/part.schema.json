@@ -1,0 +1,81 @@
+[{
+  "name" : "p_partkey",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "integer",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "p_name",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "p_mfgr",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "p_brand",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "p_type",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "p_size",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "integer",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "p_container",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "p_retailprice",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "double",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "p_comment",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "null",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+}]

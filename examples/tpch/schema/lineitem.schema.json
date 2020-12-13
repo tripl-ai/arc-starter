@@ -1,0 +1,140 @@
+[{
+  "name" : "l_orderkey",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "integer",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "l_partkey",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "integer",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "l_suppkey",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "integer",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "l_linenumber",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "integer",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "l_quantity",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "double",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "l_extendedprice",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "double",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "l_discount",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "double",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "l_tax",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "double",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "l_returnflag",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "l_linestatus",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "l_shipdate",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "date",
+  "formatters" : ["uuuu-MM-dd"],
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "l_commitdate",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "date",
+  "formatters" : ["uuuu-MM-dd"],
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "l_receiptdate",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "date",
+  "formatters" : ["uuuu-MM-dd"],
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "l_shipinstruct",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "l_shipmode",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "l_comment",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+},{
+  "name" : "null",
+  "description" : "",
+  "nullable" : true,
+  "metadata" : { },
+  "type" : "string",
+  "trim" : true,
+  "nullableValues" : [ "", "null" ]
+}]

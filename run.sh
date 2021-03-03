@@ -1,6 +1,6 @@
 docker run \
 --rm \
---volume $(pwd)/examples:/home/jovyan/examples:Z \
+--volume "$(pwd)"/examples:/home/jovyan/examples:Z \
 --env "ETL_CONF_ENV=production" \
 --entrypoint="" \
 --publish 4040:4040 \
